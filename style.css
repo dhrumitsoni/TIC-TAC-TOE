@@ -1,0 +1,89 @@
+html,
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+.splash {
+  display: block;
+  background-color: #468847;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vw;
+}
+p {
+  color: #1c0707;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  background-color: white;
+  width: 15vw;
+  height: 7vw;
+}
+.game-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+.game-board {
+  display: grid;
+  width: 45vw;
+  height: 45vw;
+  grid-template-columns: auto auto auto;
+}
+.box {
+  display: flex;
+  width: 15vw;
+  height: 15vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 3px solid black;
+  transition: background 0.2s ease-in-out;
+}
+.box:hover {
+  cursor: pointer;
+  background: grey;
+}
+#block_0,
+#block_1,
+#block_2 {
+  border-top: none;
+}
+
+#block_0,
+#block_3,
+#block_6 {
+  border-left: none;
+}
+
+#block_6,
+#block_7,
+#block_8 {
+  border-bottom: none;
+}
+
+#block_2,
+#block_5,
+#block_8 {
+  border-right: none;
+}
